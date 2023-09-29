@@ -8,7 +8,7 @@ body{
     background: #222;
 }
 .start{
-    width: 90%;
+    width: 100%;
     max-width: 470px;
     background: linear-gradient(135deg, #00feba, #5b548a);  /*creates a background that starts with the color #00feba at one corner and gradually transitions to the color #5b548a at the opposite corner. The direction of this gradient is at a 135-degree angle, */
     color: #fff;
