@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #222;
+}
+.start{
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #00feba, #5b548a);  /*creates a background that starts with the color #00feba at one corner and gradually transitions to the color #5b548a at the opposite corner. The direction of this gradient is at a 135-degree angle, */
+    color: #fff;
+    margin: 100px auto 0 ; /*top, left-right,bottom ;auto: This value sets the left and right margins to automatically adjust, typically centering the element horizontally*/
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+.start .search{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.start .search input{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 50px;
+    border-radius: 30px;
+    flex: 1;    /*it helps distribute the space evenly among the child elements, making them grow or shrink to fill the container appropriately. */
+    margin-right: 16px;
+    font-size: 18px;
+}
+.start .search button{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.start .search button img{
+    width: 20px;
+}
+.weather .icon{
+    width: 170px;
+    margin-top: 30px;
+}
+.weather .h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+.weather .h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+.weather .details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+.weather .details .column{
+    display: flex;
+    align-items: center;
+    text-align: left; 
+}
+.weather .details img{
+    width: 40px;
+    margin-right: 10px;
+}
+.humidity, .wind{
+    font-size: 28px;
+    margin-top: -6px;   /*it moves the element upward by 6 pixels relative to its default position*/
+}
+.weather{
+    display: none;
+}
+ 
+.error{
+    padding-top: 20px;
+    text-align: center;
+    margin-left: 10px;
+    font-size: 18px;
+    margin-top: 10px;
+    display: none;
+}
