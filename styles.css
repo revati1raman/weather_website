@@ -7,6 +7,9 @@
 body{
     background: #222;
 }
+.heading{
+    margin-bottom: 20px;
+}
 .start{
     width: 100%;
     max-width: 470px;
@@ -100,4 +103,3 @@ body{
 label{
     margin-right: 40px;
 }
- 
