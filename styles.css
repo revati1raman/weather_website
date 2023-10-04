@@ -95,5 +95,11 @@ body{
     margin-top: 10px;
     display: none;
 }
- 
+ .choose{
+    margin-top: 20px;
+    align-items: center; 
+}
+label{
+    margin-right: 40px;
+}
 
