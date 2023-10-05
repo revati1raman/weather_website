@@ -38,7 +38,7 @@ body{
     margin-right: 16px;
     font-size: 18px;
 }
-.start .search button{
+.start .search .btn{
     border: 0;
     outline: 0;
     background: #ebfffc;
@@ -47,7 +47,7 @@ body{
     height: 50px;
     cursor: pointer;
 }
-.start .search button img{
+.start .search .btn img{
     width: 20px;
 }
 .weather .icon{
@@ -86,7 +86,7 @@ body{
 .weather{
     display: none;
 }
- 
+
 .error{
     padding-top: 20px;
     text-align: center;
@@ -95,11 +95,49 @@ body{
     margin-top: 10px;
     display: none;
 }
- .choose{
+
+.choose{
     margin-top: 20px;
     align-items: center; 
 }
 label{
     margin-right: 40px;
 }
+#autocomplete-list{
+    /* display: block; */
+    list-style: none;
+    margin: unset;
+    pad: unset;
+    text-align: left;
+    width: 100%;
+    margin-top: 5px;
+}
+button{
+    cursor: pointer;
+}
+#autocomplete-list button{
+    border: unset;
+    background: unset;
+    color: #555;
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: .4em;
+}
 
+#autocomplete-list li{
+    border: 1px solid #ebfffc;
+    /* border-top: unset; */
+    border-radius: 10px;
+    margin-top: -1px;
+    
+}
+
+#autocomplete-list li:hover{
+    background-color:  #ebfffc;
+}
+
+#autocomplete-wrapper{
+    display: inline-block;
+    position: relative;
+}
