@@ -87,7 +87,7 @@
             if(value.length === 0) return;
 
             const filteredNames = [];
-
+            
             cityNames.forEach((cityName) =>{
                     if(cityName.substr(0,value.length).toLowerCase() === value)
                         filteredNames.push(cityName);
@@ -116,14 +116,16 @@
             const listEl = document.querySelector("#autocomplete-list");
             if (listEl) listEl.remove();
         }
+        function onCityButtonClick(e) {
+        const buttonEl = e.target;
+        const cityName = buttonEl.innerHTML;
 
-        function onCityButtonClick(e){
-                    
-            const buttonEl = e.target;
-            inputE1.value = buttonEl.innerHTML;
+        // Set the selected city in the input field.
+        inputE1.value = cityName;
 
-            removeAutoComplete();
-
+        // Call the checkWeather function to update weather details for the selected city.
+        checkWeather(cityName);
+        removeAutoComplete();
         }
         const apikey="6b861efa39b3ed03ae3317375e6461ad";
         const apiurl="https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
@@ -194,4 +196,3 @@
     </script>
 </body>
 </html>
-
