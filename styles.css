@@ -111,7 +111,22 @@ label{
     text-align: left;
     width: 100%;
     margin-top: 5px;
+
+    max-height: 200px; /* Adjust the maximum height as needed */
+    overflow-y: auto; /* Add a scrollbar when the list overflows */
+    /* border: 1px solid #ccc; Optional: Add a border for better visual separation */
+    /* border-radius: 4px;  */
+    scrollbar-color: #aaabab #ddd9d9;  /* Change the color of the scrollbar thumb and track */
 }
+
+#autocomplete-list::-webkit-scrollbar-track {
+    background: #ddd9d9; /* Change the background color of the track */
+  }
+  
+  #autocomplete-list::-webkit-scrollbar-thumb {
+    background-color: #aaabab; /* Change the color of the scrollbar thumb */
+  }
+
 button{
     cursor: pointer;
 }
